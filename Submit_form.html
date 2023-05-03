@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="alert" hidden>
+      <span class="closebtn" onclick="this.parentElement.hidden='true';"
+        >&times;</span
+      >
+      <i class="fa-solid fa-circle-check"></i> Thank you for contacting us,
+      <span id="numelePersoanei"> First Name</span>
+    </div>
+    <br />
+    <div class="container">
+      <div class="stanga">
+        <input
+          type="text"
+          id="prenume"
+          class="normal"
+          placeholder="First Name"
+        />
+        <input type="text" id="nume" class="normal" placeholder="Last Name" />
+        <div class="gender">
+          Gender <br />
+          <input type="radio" id="M" name="gen" value="M" checked /><label
+            for="M"
+            >M</label
+          >
+          <br />
+          <input type="radio" id="F" name="gen" value="F" /><label for="F"
+            >F</label
+          >
+        </div>
+        <!--<input type="text" id="mesaj" placeholder="Your message here..." />-->
+        <textarea
+          id="mesaj"
+          name="mesaj"
+          cols="40"
+          rows="5"
+          class="normal"
+          placeholder="Your message here..."
+        ></textarea>
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
+      <div class="dreapta">
+        <img src="girl-smiley-face.png" alt="" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

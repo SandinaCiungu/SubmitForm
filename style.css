@@ -1,0 +1,43 @@
+.container {
+  width: 740px;
+  display: flex;
+}
+.stanga {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+}
+img {
+  height: 225px;
+  border-radius: 5px;
+}
+button {
+  width: 65px;
+}
+
+.alert {
+  padding: 10px;
+  background-color: rgb(188, 234, 188);
+  color: darkgreen;
+  width: 720px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: darkgreen;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.rosu {
+  border: 1px solid red;
+}
